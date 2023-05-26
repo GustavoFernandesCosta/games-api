@@ -1,5 +1,17 @@
 import { v4 as uuid } from 'uuid';
-class Game {
+
+export interface IGameDTO {
+  id?: string;
+  name: string;
+  designer: string;
+  genre: string;
+  platform: string;
+  developer: string;
+  releaseData: string;
+  mode: string;
+}
+
+export class Game {
   id?: string;
 
   name!: string;
@@ -26,5 +38,3 @@ class Game {
     }
   }
 }
-
-export { Game };
